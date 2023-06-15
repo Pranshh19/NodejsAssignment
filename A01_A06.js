@@ -26,32 +26,30 @@ console.log("\n");
 
 
 //A04
-// fs.appendFile('nodejs_architecture.txt', '\nAdvantages of Nodejs are: \n 1.Real time applicaton \n 2. Single Thread application \n 3. Non-Blocking Asynchronus ', function (err) {
-//     if (err) {
-//         return err;
-//     }
-//     console.log("Success");
-// })
+fs.appendFile('nodejs_architecture.txt', '\nAdvantages of Nodejs are: \n 1.Real time applicaton \n 2. Single Thread application \n 3. Non-Blocking Asynchronus ', function (err) {
+    if (err) {
+        return err;
+    }
+    console.log("Success");
+})
 
 
 // //A05
-// fs.readFile('nodejs_architecture.txt', function (err,data) {
-//     if (err) {
-//         console.log("Error");
-//         return err;
-//     }
-//     console.log("Data is: ", data.toString());
-// })
+fs.readFile('nodejs_architecture.txt', function (err,data) {
+    if (err) {
+        console.log("Error");
+        return err;
+    }
+    console.log("Data is: ", data.toString());
+})
 
 
 //A05
-// fs.unlink('nodejs_architecture');
-
-
+fs.unlink('nodejs_architecture');
 
 
 //A06
-// const os = require('os')
+const os = require('os')
 
-// console.log("OS name: "+os.hostname);
-// console.log("OS release: "+os.release);
+console.log("OS name: "+os.hostname);
+console.log("OS release: "+os.release);
